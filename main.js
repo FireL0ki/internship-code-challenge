@@ -1,6 +1,5 @@
 
 let livestockInformation =
-
 {
     "livestock": [
         {"animal": "Goat", "barn": "Green"},
@@ -42,10 +41,28 @@ there should be 4 in the first and second and 3 in the third. Output a valid JSO
 
 Please describe every methods (functions) and any classes created with additional code comments. */
 
+
 /*  1. Iterate over array of objects (livestockArray) & pull the barn colors (green, blue, red, black, brown). Make each barn color into its own array.
-    2. Iterate over 
+    2. Iterate over livestockArray. Where ["barn"] = color, retrieve the element in the value attached to the animal key.
+        a. 
+
+        a. check if barn{color} array has space ( is < 4 in size (.length() ), otherwise, create a new barn of that color and add the animal to it.) -- make sure to check other barn multiples of each color!
+            i. if ({color}Barn.length() >= 4) {
+                 let {color}Barn_2 = []
+                 {color}Barn_2.push("(animal)")
+            } else {
+                {color}Barn.push("(animal)")
+            }
+        b. barnColorArray.push("color") -- what
+    3. Once animal distributions have occurred, check barns of each color to make sure there is not a difference in animal number (.length()) of more than 1 between them
+    4. How do I ouput this data as JSON again?
 
 */
+
+
+function getAnimalByColor(barnColor, ) {
+    // 
+}
 
 
 let livestockArray = livestockInformation['livestock'];
@@ -78,13 +95,6 @@ let blackBarn = [];
 let brownBarn = [];
 
 
-// livestockArray.forEach(livestock => {
-//     for (let key in livestock) {
-//         if (value = "blue") {
-//             blueBarn.push(key)
-//         }
-//     }
-// })
 
 
 // Retrieve animals (values attached to animal key) where barn is blue (where value attached to barn key = blue)
