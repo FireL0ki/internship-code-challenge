@@ -53,21 +53,13 @@ Please describe every methods (functions) and any classes created with additiona
             } else {
                 {color}Barn.push("(animal)")
             }
-        b. barnColorArray.push("color") -- what
+
     3. Once animal distributions have occurred, check barns of each color to make sure there is not a difference in animal number (.length()) of more than 1 between them
     4. How do I ouput this data as JSON again?
 
 */
 
-
-function getAnimalByColor(barnColor, ) {
-    // 
-}
-
-
 let livestockArray = livestockInformation['livestock'];
-// console.log(livestockArray)
-
 
 console.log("TEST")
 livestockArray.forEach(livestock => {
@@ -75,6 +67,23 @@ livestockArray.forEach(livestock => {
         console.log(`${key}: ${livestock[key]}`);
     }
 })
+
+
+// make a function to iterate over the array, and pull the animals for each barn color and put them into the barn arrays
+function getAnimalByColor(barnColor, ) {
+    // iterate over
+    livestockArray.forEach(livestock => {
+        for (let key in livestock) {
+            if (key == "barn") {
+                (livestock[key])
+            }
+        }
+    })
+}
+
+getAnimalByColor();
+
+
 
 // name this something else
 let livestockArray = [];
@@ -87,20 +96,28 @@ livestockArray.forEach(livestock => {
 
 
 // create a barn for each favorite color
-// update to cycle over array of objects and grab barn colors and create array for each
 let greenBarn = [];
 let blueBarn = [];
 let redBarn = [];
 let blackBarn = [];
 let brownBarn = [];
 
+// update to cycle over array of objects and grab barn colors and create array for each
 
 
-
-// Retrieve animals (values attached to animal key) where barn is blue (where value attached to barn key = blue)
-// Object.values(livestockArray).forEach(livestock => {
-//     for()
-// })
+// create function to add animals to barns
+// check if barn{color} array has space ( is < 4 in size (.length() ), otherwise, create a new barn of that color and add the animal to it.) 
+// -- make sure to check other barn multiples of each color!
+function addAnimalsToBarns() {
+    // can I use a variable to store the color of the barn and concatonate it to the rest of the array title, or do I need to separately write out the barn types?
+    if (barnColor + Barn.length() >= 4) {
+                // create a new barn to hold the overflow animals -- how to make a new barn array name?
+                 let {barnColor}Barn_2 = []
+                 {barnColor}Barn_2.push(animal)
+            } else {
+                {barnColor}Barn.push(animal)
+            }
+        }
 
 
 function getValuebyKey(object, key) {
@@ -109,12 +126,6 @@ function getValuebyKey(object, key) {
 
 console.log("NEW ATTEMPT")
 console.log(getValuebyKey(livestockArray,"blue"))
-
-
-// livestockArray.filter(item => item.barn == 'blue')
-
-
-console.log(`BLUE BARN ARRAY ${blueBarn}`);
 
 
 
