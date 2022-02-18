@@ -44,7 +44,6 @@ Please describe every methods (functions) and any classes created with additiona
 
 /*  1. Iterate over array of objects (livestockArray) & pull the barn colors (green, blue, red, black, brown). Make each barn color into its own array.
     2. Iterate over livestockArray. Where ["barn"] = color, retrieve the element in the value attached to the animal key.
-        a. 
 
         a. check if barn{color} array has space ( is < 4 in size (.length() ), otherwise, create a new barn of that color and add the animal to it.) -- make sure to check other barn multiples of each color!
             i. if ({color}Barn.length() >= 4) {
