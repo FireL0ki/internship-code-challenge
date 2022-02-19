@@ -53,7 +53,7 @@ For example: whether the challenge wanted me to connect to the json file in a sp
 I ended up deciding to simply put it in a variable in my .js file, so I could dive into the challenge.
 
 
-I started out a lot of for loops, but I ended up with a lot of repetitive and long code.
+I started out with a lot of for loops, but I ended up with a lot of repetitive and long code.
 I worked with trying to create useable functions, and after getting stuck on creating dynamic variable names, looked back at loops.
 I talked over this with a mentor, and she encouraged me to try to focus on cutting down the loops- so
 I decided to shift to exploring the forEach loop, and was able to use that to cut down on repetitive code
@@ -63,7 +63,7 @@ When building my code for working on dividing the animals between more barns, my
 when I had been looking at splice(). After experimenting with them, and reading up on the documentation, I went with slice() because 
 I realized splice() manipulated the original array.
 
-One of the errors I ran into was with using slice(); on first read, I though the documentation was saying the first number was for start index,
+One of the errors I ran into was with using slice(); on first read, I thought the documentation was saying the first number was for start index,
 and the second was for an int / how many it should grab after the index. This led to my arrays not populating properly, and I was able to catch it
 after some troubleshooting, that the second number was meant to be for an end index.
 

@@ -1,5 +1,5 @@
 
-let barnAnimalsArray =
+const barnAnimalsArray =
 {
     "livestock": [
         {"animal": "Goat", "barn": "Green"},
@@ -30,10 +30,10 @@ let barnAnimalsArray =
     ]
 }
 
-let barnAnimals = barnAnimalsArray["livestock"];
+const barnAnimals = barnAnimalsArray.livestock;
 
 // create object to store
-let animalsByColor = {};
+const animalsByColor = {};
 
 // iterate over barnAnimals array of objects, use barnColor variable to store the different barn colors as they are accessed
 // this loop will place all the animals in their correct color barn arrays
@@ -54,7 +54,6 @@ barnAnimals.forEach( (animal) => {
 //variable to store max number of animals per barn
 const maxAnimalNumber = 4;
 const JSONObject = [];
-
 
 
 // iterate over animalsByColor object. For each barn, divide by 4 (max number animals) to find out how many total barns are needed
