@@ -32,7 +32,7 @@ const barnAnimalsArray =
 
 const barnAnimals = barnAnimalsArray.livestock;
 
-// create object to store
+// create object to store animals, as they are sorted by color
 const animalsByColor = {};
 
 // iterate over barnAnimals array of objects, use barnColor variable to store the different barn colors as they are accessed
